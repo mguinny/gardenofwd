@@ -1,0 +1,11 @@
+$header: #333;
+
+.header {
+    display: block;
+    position: sticky;
+    background-color: $header;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0;
+  }
