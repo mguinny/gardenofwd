@@ -1,1 +1,25 @@
-<p>products works!</p>
+<div>
+    <mat-grid-list cols="4" rowHeight="4:4" gutterSize="10">
+        <ng-container *ngFor="let product of products">
+            <mat-grid-tile>
+                <mat-card>
+                    <mat-card-header>
+                        {{product.product_name}}
+                    </mat-card-header>
+                    <img mat-card-md-image src="{{product.product_image_url}}" alt="Photo of a Shiba Inu" 
+                    class="card-image-display"
+                    >
+
+                     <mat-card-content>
+                        <p>
+                            {{product.product_description}}
+                        </p>                  
+                </mat-card-content>
+                </mat-card>
+        </mat-grid-tile>
+        </ng-container>
+
+    </mat-grid-list>
+
+</div>
+
